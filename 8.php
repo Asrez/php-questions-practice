@@ -5,17 +5,17 @@ if(isset($_GET["number1"]) and isset($_GET["number2"]) and isset($_GET["number3"
     $number3 = $_GET["number3"];
 
     if($number1 > $number2 and $number1 > $number3){
-        echo "number1";
+        echo $number1;
     }elseif ($number2 > $number1 and $number2 > $number3) {
-        echo "number2";
+        echo $number2;
     }elseif ($number3 > $number1 and $number3 > $number2) {
-        echo "number3";
+        echo $number3;
     }elseif($number1 == $number2 and $number1 > $number3){
-        echo "number1 = number2";
+        echo $number1;
     }elseif($number2 == $number3 and $number2 > $number1){
-        echo "number2 = number3";
+        echo $number2;
     }elseif($number1 == $number3 and $number2 > $number1){
-        echo "number1 == number3";
+        echo $number1;
     }elseif($number1 = $number2 = $number3){
         echo "number1 = number2 = number3 ";
     }
